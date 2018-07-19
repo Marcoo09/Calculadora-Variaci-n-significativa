@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Marco Fiorito y Felipe Najson-->
+	<title>Trabajo Global</title>
+	<meta name=viewport content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../resources/style.css">
+		
+</head>
+<body>
+	<div class="row">
+		<div class="column1">
+			<fieldset class="fieldset">
+				<legend><h1 class="">Calculadora</h1></legend>
+				<table>
+					<tr>
+						<td>
+							<label for="cantPag">Cantidad de semaforos:</label>
+						</td>
+						<td>
+							<input type="number" name="" id="light" value="">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="speed">Velocidad (km/h): </label>
+						</td>
+						<td>
+							<input type="number" name="" placeholder="" id="speed" value="">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="speed">Valor que define la variación significativa en minutos: </label>
+						</td>
+						<td>
+							<input type="number" name="" placeholder="" id="variantSig" value="">
+						</td>
+					</tr>
+					<tr >
+						<td colspan="2" ><br>
+							<button type="submit" id="buttonConfirm" class="addBtn" onclick="calculateTime()">Calcular el tiempo</button>
+						</td>
+					</tr>
+					<tr >
+						<td>
+							<label>Resultado: </label>
+						</td>
+						<td>
+							<label id= "result"> </label>
+						</td>
+					</tr>
+
+				</table>
+			</fieldset>
+			<br>
+			<div id="myDIV" class="header">
+				  <h3>Resultados</h3>
+				  <p>Color Verde - Sin variación significativa <br> Color Rojo - Con variación significativa <br> <strong>Variación significativa: más de 5 minutos</strong><br> <br>[43 minutos (10 semáforos 80 km/h valor con la cual comparamos para determinar la variación significativa)]</p>
+			</div>
+
+			<ul id="myUL">
+				<li>43 minutos</li>
+			</ul>
+			<fieldset>
+				<h4>En el gráfico de la derecha representamos la función obtenida de la fórmula tanto para velocidad variable como para velocidad constante, variando la cantidad de semáforos.</h4>
+			</fieldset>
+
+
+		</div>
+		<div class="column2">
+			<div id="ggbApplet"></div> 
+		</div>	
+	</div>
+
+	<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js" ></script>
+	<script src="../resources/script.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
